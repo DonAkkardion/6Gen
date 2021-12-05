@@ -5,11 +5,11 @@ const tests = require("@playwright/test");
 
   tests.test('If redirect fails -> Done', async({page}) =>
    {
-    await page.coverage.startJSCoverage();
-    const buyPO = new BuyPO(page);
-    await buyPO.Navigate();
-    await buyPO.Buy();
-    const coverage = await page.coverage.stopJSCoverage();
+    // await page.coverage.startJSCoverage();
+    // const BuySKR = new BuySKR(page);
+    // await BuySKR.Navigate();
+    // await BuySKR.Buy();
+    // const coverage = await page.coverage.stopJSCoverage();
     // for (const entry of coverage) {
     //   const converter = new v8toIstanbul('', 0, { source: entry.source });
     //   await converter.load();
